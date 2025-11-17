@@ -5,3 +5,30 @@
     margin-inline: auto;
     height: 100%;
 }
+
+/**********************************/
+/*            Header              */
+/**********************************/
+
+.header-bg-container, .header-master-container {
+    height: 60px;
+    background-color: azure;
+}
+
+.header-master-container, 
+.company-header-container, 
+.shoe-copmanies-header-container, ul {
+    display: flex;
+}
+
+.header-master-container {
+    flex-direction: column; 
+}
+
+.company-header-container {
+    /* flex-direction: row; */
+}
+
+.shoe-copmanies-header-container {
+    justify-content: center;
+}
