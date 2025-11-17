@@ -36,7 +36,9 @@
 }
 
 .company-header-container {
+    height: 40px;    
     justify-content: space-between;
+    place-items: center;
 }
 
 .shoe-companies-header-container {
