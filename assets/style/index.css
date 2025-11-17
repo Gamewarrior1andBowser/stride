@@ -17,7 +17,7 @@
 
 .header-master-container, 
 .company-header-container, 
-.shoe-copmanies-header-container, ul {
+.shoe-companies-header-container, ul {
     display: flex;
 }
 
@@ -25,10 +25,20 @@
     flex-direction: column; 
 }
 
-.company-header-container {
-    /* flex-direction: row; */
+.company-header-bg {
+    height: 40px;
+    background-color: #DC143C;
 }
 
-.shoe-copmanies-header-container {
+.shoe-companies-bg {
+    height: 20px;
+    background-color: #c71236;
+}
+
+.company-header-container {
+    justify-content: space-between;
+}
+
+.shoe-companies-header-container {
     justify-content: center;
 }
