@@ -71,6 +71,57 @@
             <button class="add-cart-btn">Add to Cart</button>
         </div>
     </section>
+
+     <!--contact form-->
+    <section id="contact" class="contact-section container">
+        <h2>Contact Us</h2>
+
+        <form class="contact-form" id="contactForm">
+
+            <div class="name-fields">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" required>
+                </div>
+
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" required>
+                </div>
+            </div>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+1 647-000-0000" required>
+
+            <label>Subject</label>
+            <select required>
+                <option value="">Choose a subject</option>
+                <option>Order Inquiry</option>
+                <option>Return/Refund</option>
+                <option>Product Question</option>
+                <option>Business Collaboration</option>
+                <option>Other</option>
+            </select>
+
+            <label>Preferred Contact Method</label>
+            <div class="contact-method">
+                <label><input type="radio" name="method" required> Email</label>
+                <label><input type="radio" name="method"> Phone</label>
+            </div>
+
+            <label>Message</label>
+            <textarea rows="5" required></textarea>
+
+            <label class="terms">
+                <input type="checkbox" required> I agree to the terms and conditions
+            </label>
+
+            <button type="submit" class="contact-submit">Send Message</button>
+        </form>
+    </section>
     
 
 
