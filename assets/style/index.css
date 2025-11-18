@@ -5,3 +5,119 @@
     margin-inline: auto;
     height: 100%;
 }
+
+/**********************************/
+/*            Header              */
+/**********************************/
+
+.header-bg-container, .header-master-container {
+    height: 60px;
+    background-color: azure;
+}
+
+.header-master-container, 
+.company-header-container, 
+.shoe-companies-header-container, 
+.company-logo-name,
+ul {
+    display: flex;
+}
+
+.header-master-container {
+    flex-direction: column; 
+}
+
+.company-header-bg {
+    height: 40px;
+    background-color: #DC143C;
+}
+
+.shoe-companies-bg {
+    height: 20px;
+    background-color: #c71236;
+}
+
+.company-header-container {
+    height: 40px;    
+    justify-content: space-between;
+    place-items: center;
+}
+
+.shoe-companies-header-container {
+    height: 20px;
+    justify-content: center;
+    place-items: center;
+}
+
+header {
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+.company-header-container li {
+    padding: 20px 20px;
+    transition: all 0.25s ease-in-out;
+}
+
+.company-header-container li:hover {
+    background-color: #c71236;
+    cursor: pointer;
+}
+
+header img {
+    border-radius: 50%;
+    height: 36px;
+}
+
+.company-logo-name {
+    align-items: center;
+    gap: 20px;
+}
+
+.search-container {
+    width: 50%;
+}
+
+.search-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.search-bar {
+    width: 100%;
+    background-color: #c71236;
+    padding: 2px 15px 2px 35px;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.search-bar:hover {
+    border: 1px solid #a5102e;
+}
+
+.search-bar:focus {
+    border-color: #fff;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-60%);
+    font-size: 32px;
+}
+
+.shoe-companies-header-container li {
+    padding: 0 15px;
+    transition: all 0.25s ease-in-out;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.shoe-companies-header-container li:hover {
+    background-color: #a5102e;
+    cursor: pointer;
+}
