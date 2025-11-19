@@ -4,127 +4,172 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./assets/style/index.css" />
+    <link rel="stylesheet" href="./assets/style/details.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
-    <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
-    <title>Stride</title>
+    <link rel="icon" href="./assets/media/stride-logo.png" type="image/x-icon">
+    <title>Details</title>
   </head>
   <body>
-    <!--details header-->
-    <header class="header">
-        <div class="container header-content">
-            <a href="index.html" class="logo">Stride</a>
-
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <button class="login-btn" id="openLogin">Login</button>
+    <header>
+        <div class="header-bg-container">
+            <div class="company-header-bg">
+                <div class="container">
+                    <div class="company-header-container">
+                        <div class="company-logo-name">
+                            <img src="./assets/media/stride-logo.png" alt="Stride Company Logo">
+                            <h1>Stride</h1>
+                        </div>
+                        <div class="search-container">
+                            <form action="" method="POST">
+                                <div class="search-wrapper">
+                                    <span class="search-icon">⌕</span>
+                                    <input type="text" placeholder="Search" class="search-bar">
+                                </div>
+                            </form>
+                        </div>
+                        <nav>
+                            <ul>
+                                <a class="main-nav" href="#overlay"><li>Home</li></a>
+                                <a class="main-nav" href="#about-section"><li>About</li></a>
+                                <a class="main-nav" href="#products"><li>Products</li></a>
+                                <a class="main-nav" href="#contact"><li>Contact</li></a>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
+    <main>
+    <div class="container">
+        <div class="login-dialog" id="loginDialog">
+            <div class="login-box">
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="login-flex">
+                        <div class="login-flex-col">
+                            <label>Email:</label>
+                            <input class="login-input" type="email" placeholder="email@email.org" required>
+                        </div>
+                        <div class="login-flex-col">
+                            <label>Password:</label>
+                            <input class="login-input" type="password" required>
+                        </div>
+                    </div>
+                    <div class="login-buttons">
+                        <button type="submit" class="submit-login">Login</button>
+                        <div class="create-login">Create Account</div>
+                    </div>
+                </form>
+            </div>
+        </div>
 
-    <!--logine box-->
-    <div class="login-dialog" id="loginDialog">
-        <div class="login-box">
-            <span class="close-login" id="closeLogin">&times;</span>
-            <h2>Login</h2>
+        <!--product details-->
+        <section class="product-detail container">
+            <div class="product-gallery">
+                <img src="./shoe.jpg" alt="Stride Running Shoe" class="product-img">
+            </div>
 
-            <form id="loginForm">
+            <div class="product-info">
+                <h1>Stride AeroFlow Running Shoe</h1>
+
+                <p class="product-price">$129.99</p>
+
+                <p class="product-description">
+                    The Stride AeroFlow is engineered for comfort, speed, and durability. 
+                    Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — 
+                    perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.
+                </p>
+
+                <ul class="product-features">
+                    <li>Lightweight aerodynamic design</li>
+                    <li>Breathable mesh upper</li>
+                    <li>Shock-absorbing midsole</li>
+                    <li>Non-slip rubber outsole</li>
+                    <li>Available in multiple sizes</li>
+                </ul>
+
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+        </section>
+
+        <!--contact form-->
+        <section id="contact" class="contact-section container">
+            <h2>Contact Us</h2>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="name-fields">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+
                 <label>Email</label>
                 <input type="email" required>
 
-                <label>Password</label>
-                <input type="password" required>
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+1 647-000-0000" required>
 
-                <button type="submit" class="submit-login">Login</button>
+                <label>Subject</label>
+                <select required>
+                    <option value="">Choose a subject</option>
+                    <option>Order Inquiry</option>
+                    <option>Return/Refund</option>
+                    <option>Product Question</option>
+                    <option>Business Collaboration</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Preferred Contact Method</label>
+                <div class="contact-method">
+                    <label><input type="radio" name="method" required> Email</label>
+                    <label><input type="radio" name="method"> Phone</label>
+                </div>
+
+                <label>Message</label>
+                <textarea rows="5" required></textarea>
+
+                <label class="terms">
+                    <input type="checkbox" required> I agree to the terms and conditions
+                </label>
+
+                <button type="submit" class="contact-submit">Send Message</button>
             </form>
+        </section>
         </div>
-    </div>
-
-    <!--product details-->
-    <section class="product-detail container">
-        <div class="product-gallery">
-            <img src="./shoe.jpg" alt="Stride Running Shoe" class="product-img">
-        </div>
-
-        <div class="product-info">
-            <h1>Stride AeroFlow Running Shoe</h1>
-
-            <p class="product-price">$129.99</p>
-
-            <p class="product-description">
-                The Stride AeroFlow is engineered for comfort, speed, and durability. 
-                Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — 
-                perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.
-            </p>
-
-            <ul class="product-features">
-                <li>Lightweight aerodynamic design</li>
-                <li>Breathable mesh upper</li>
-                <li>Shock-absorbing midsole</li>
-                <li>Non-slip rubber outsole</li>
-                <li>Available in multiple sizes</li>
-            </ul>
-
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-    </section>
-
-     <!--contact form-->
-    <section id="contact" class="contact-section container">
-        <h2>Contact Us</h2>
-
-        <form class="contact-form" id="contactForm">
-
-            <div class="name-fields">
-                <div>
-                    <label>First Name</label>
-                    <input type="text" required>
-                </div>
-
-                <div>
-                    <label>Last Name</label>
-                    <input type="text" required>
-                </div>
+    </main>
+    <footer>
+        <div class="footer-flex">
+            <div class="footer-flex-col">
+                <h4>Help</h4>
+                <p>Get help</p>
+                <p>Order Status</p>
+                <p>Returns</p>
+                <p>Contact Us</p>
             </div>
-
-            <label>Email</label>
-            <input type="email" required>
-
-            <label>Phone Number</label>
-            <input type="tel" placeholder="+1 647-000-0000" required>
-
-            <label>Subject</label>
-            <select required>
-                <option value="">Choose a subject</option>
-                <option>Order Inquiry</option>
-                <option>Return/Refund</option>
-                <option>Product Question</option>
-                <option>Business Collaboration</option>
-                <option>Other</option>
-            </select>
-
-            <label>Preferred Contact Method</label>
-            <div class="contact-method">
-                <label><input type="radio" name="method" required> Email</label>
-                <label><input type="radio" name="method"> Phone</label>
+            <div class="footer-flex-col">
+                <h4>Resources</h4>
+                <p>Find a Warehouse</p>
+                <p>Feedback</p>
+                <p>Join the crew</p>
             </div>
-
-            <label>Message</label>
-            <textarea rows="5" required></textarea>
-
-            <label class="terms">
-                <input type="checkbox" required> I agree to the terms and conditions
-            </label>
-
-            <button type="submit" class="contact-submit">Send Message</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2025 Stride Footwear. All rights reserved.</p>
+            <div class="footer-flex-col">
+                <h4>Company</h4>
+                <p>About Us</p>
+                <p>News</p>
+                <p>Careers</p>
+                <p>Invest</p>
+                <p>Work with Us</p>
+            </div>
+        </div>
+        <p id="copyright">&copy; 2025 Stride, Inc. All rights reserved</p>
     </footer>
-    
 </body>
 </html>
