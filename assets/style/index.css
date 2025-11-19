@@ -96,6 +96,33 @@ header img {
     cursor: pointer;
 }
 
+.company-header-bg {
+    height: 40px;
+    background-color: #DC143C;
+}
+ 
+.shoe-companies-bg {
+    height: 20px;
+    background-color: #c71236;
+}
+ 
+.company-header-container {
+    height: 40px;    
+    justify-content: space-between;
+    place-items: center;
+}
+ 
+.shoe-companies-header-container {
+    height: 20px;
+    justify-content: center;
+    place-items: center;
+}
+ 
+header {
+    color: #fff;
+}
+ 
+
 /*********************************/
 /*            Hero               */
 /*********************************/
