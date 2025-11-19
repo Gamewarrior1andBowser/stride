@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/style/details.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
-    <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
-    <title>Stride</title>
+    <link rel="icon" href="./assets/media/stride-logo.png" type="image/x-icon">
+    <title>Details</title>
   </head>
   <body>
     <header>
@@ -40,104 +40,106 @@
             </div>
         </div>
     </header>
+    <main>
+    <div class="container">
+        <div class="login-dialog" id="loginDialog">
+            <div class="login-box">
+                <span class="close-login" id="closeLogin">&times;</span>
+                <h2>Login</h2>
 
-    <!--logine box-->
-    <div class="login-dialog" id="loginDialog">
-        <div class="login-box">
-            <span class="close-login" id="closeLogin">&times;</span>
-            <h2>Login</h2>
+                <form id="loginForm">
+                    <label>Email</label>
+                    <input type="email" required>
 
-            <form id="loginForm">
+                    <label>Password</label>
+                    <input type="password" required>
+
+                    <button type="submit" class="submit-login">Login</button>
+                </form>
+            </div>
+        </div>
+
+        <!--product details-->
+        <section class="product-detail container">
+            <div class="product-gallery">
+                <img src="./shoe.jpg" alt="Stride Running Shoe" class="product-img">
+            </div>
+
+            <div class="product-info">
+                <h1>Stride AeroFlow Running Shoe</h1>
+
+                <p class="product-price">$129.99</p>
+
+                <p class="product-description">
+                    The Stride AeroFlow is engineered for comfort, speed, and durability. 
+                    Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — 
+                    perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.
+                </p>
+
+                <ul class="product-features">
+                    <li>Lightweight aerodynamic design</li>
+                    <li>Breathable mesh upper</li>
+                    <li>Shock-absorbing midsole</li>
+                    <li>Non-slip rubber outsole</li>
+                    <li>Available in multiple sizes</li>
+                </ul>
+
+                <button class="add-cart-btn">Add to Cart</button>
+            </div>
+        </section>
+
+        <!--contact form-->
+        <section id="contact" class="contact-section container">
+            <h2>Contact Us</h2>
+
+            <form class="contact-form" id="contactForm">
+
+                <div class="name-fields">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" required>
+                    </div>
+
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+
                 <label>Email</label>
                 <input type="email" required>
 
-                <label>Password</label>
-                <input type="password" required>
+                <label>Phone Number</label>
+                <input type="tel" placeholder="+1 647-000-0000" required>
 
-                <button type="submit" class="submit-login">Login</button>
+                <label>Subject</label>
+                <select required>
+                    <option value="">Choose a subject</option>
+                    <option>Order Inquiry</option>
+                    <option>Return/Refund</option>
+                    <option>Product Question</option>
+                    <option>Business Collaboration</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Preferred Contact Method</label>
+                <div class="contact-method">
+                    <label><input type="radio" name="method" required> Email</label>
+                    <label><input type="radio" name="method"> Phone</label>
+                </div>
+
+                <label>Message</label>
+                <textarea rows="5" required></textarea>
+
+                <label class="terms">
+                    <input type="checkbox" required> I agree to the terms and conditions
+                </label>
+
+                <button type="submit" class="contact-submit">Send Message</button>
             </form>
+        </section>
         </div>
-    </div>
-
-    <!--product details-->
-    <section class="product-detail container">
-        <div class="product-gallery">
-            <img src="./shoe.jpg" alt="Stride Running Shoe" class="product-img">
-        </div>
-
-        <div class="product-info">
-            <h1>Stride AeroFlow Running Shoe</h1>
-
-            <p class="product-price">$129.99</p>
-
-            <p class="product-description">
-                The Stride AeroFlow is engineered for comfort, speed, and durability. 
-                Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — 
-                perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.
-            </p>
-
-            <ul class="product-features">
-                <li>Lightweight aerodynamic design</li>
-                <li>Breathable mesh upper</li>
-                <li>Shock-absorbing midsole</li>
-                <li>Non-slip rubber outsole</li>
-                <li>Available in multiple sizes</li>
-            </ul>
-
-            <button class="add-cart-btn">Add to Cart</button>
-        </div>
-    </section>
-
-     <!--contact form-->
-    <section id="contact" class="contact-section container">
-        <h2>Contact Us</h2>
-
-        <form class="contact-form" id="contactForm">
-
-            <div class="name-fields">
-                <div>
-                    <label>First Name</label>
-                    <input type="text" required>
-                </div>
-
-                <div>
-                    <label>Last Name</label>
-                    <input type="text" required>
-                </div>
-            </div>
-
-            <label>Email</label>
-            <input type="email" required>
-
-            <label>Phone Number</label>
-            <input type="tel" placeholder="+1 647-000-0000" required>
-
-            <label>Subject</label>
-            <select required>
-                <option value="">Choose a subject</option>
-                <option>Order Inquiry</option>
-                <option>Return/Refund</option>
-                <option>Product Question</option>
-                <option>Business Collaboration</option>
-                <option>Other</option>
-            </select>
-
-            <label>Preferred Contact Method</label>
-            <div class="contact-method">
-                <label><input type="radio" name="method" required> Email</label>
-                <label><input type="radio" name="method"> Phone</label>
-            </div>
-
-            <label>Message</label>
-            <textarea rows="5" required></textarea>
-
-            <label class="terms">
-                <input type="checkbox" required> I agree to the terms and conditions
-            </label>
-
-            <button type="submit" class="contact-submit">Send Message</button>
-        </form>
-    </section>
+    </main>
     <footer>
         <div class="footer-flex">
             <div class="footer-flex-col">

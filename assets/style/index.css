@@ -22,6 +22,8 @@
 .header-master-container, 
 .company-header-container, 
 .shoe-companies-header-container, 
+.footer-flex,
+.footer-flex-col,
 .company-logo-name,
 ul {
     display: flex;
@@ -113,4 +115,34 @@ header img {
 .shoe-companies-header-container li:hover {
     background-color: #a5102e;
     cursor: pointer;
+}
+
+/*********************************/
+/*            Footer             */
+/*********************************/
+
+footer {
+    background-color: #DC143C;
+    color: #fff;
+    text-align: center;
+    /* line-height: 60px; */
+    padding: 20px;
+}
+
+.footer-flex {
+    justify-content: space-around;
+}
+
+.footer-flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+#copyright {
+    padding-top: 20px;
 }
