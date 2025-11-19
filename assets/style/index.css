@@ -10,21 +10,23 @@
 /*            Header              */
 /**********************************/
 
-.main-nav {
-    color: #fff;
+a {
     text-decoration: none;
+    color: #fff;
 }
 
 .header-bg-container, .header-master-container {
     height: 60px;
+    background-color: azure;
 }
 
 .header-master-container, 
 .company-header-container, 
 .shoe-companies-header-container, 
-.footer-flex,
-.footer-flex-col,
 .company-logo-name,
+.footer-flex,
+.hero-flex-col,
+.hero-buttons,
 ul {
     display: flex;
 }
@@ -34,13 +36,24 @@ ul {
 }
 
 .company-header-bg {
-    height: 60px;
+    height: 40px;
     background-color: #DC143C;
 }
 
+.shoe-companies-bg {
+    height: 20px;
+    background-color: #c71236;
+}
+
 .company-header-container {
-    height: 60px;    
+    height: 40px;    
     justify-content: space-between;
+    place-items: center;
+}
+
+.shoe-companies-header-container {
+    height: 20px;
+    justify-content: center;
     place-items: center;
 }
 
@@ -55,6 +68,7 @@ ul {
 .company-header-container li {
     padding: 20px 20px;
     transition: all 0.25s ease-in-out;
+    font-weight: 500;
 }
 
 .company-header-container li:hover {
@@ -115,6 +129,330 @@ header img {
 .shoe-companies-header-container li:hover {
     background-color: #a5102e;
     cursor: pointer;
+}
+
+/*********************************/
+/*            Hero               */
+/*********************************/
+
+body {
+    background-color: #f3f3f3;
+}
+
+.hero-flex-col {
+    height: calc(100svh - 60px);
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+    gap: 40px;
+}
+
+#overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hero {
+    position: relative;
+    width: 100%;
+    height: calc(100svh - 60px);
+    background: url(../media/hero-img.jpg) center / cover no-repeat;
+}
+
+.hero-content {
+    display: flex;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-buttons {
+    gap: 20px;
+}
+
+#shop {
+    justify-content: center;
+    place-items: center;
+    background-color: #c71236;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+#shop:hover {
+    background-color: #a5102e;
+    cursor: pointer;
+}
+
+#about-us {
+    justify-content: center;
+    place-items: center;
+    background-color: #3c3c3c;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in-out;
+}
+
+#about-us:hover {
+    background-color: #4e4e4e;
+    cursor: pointer;
+}
+
+/*********************************/
+/*            About              */
+/*********************************/
+
+.about, .deal-container, .shoe-display-container, .contact-section {
+    margin-top: 40px;
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.about-content-container {
+    display: flex;
+    gap: 20px;
+}
+
+.about-content-container img {
+    width: 50%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.about-content-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.learn-more {
+    justify-content: center;
+    place-items: center;
+    background-color: #c71236;
+    padding: 4px 20px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+.main-nav {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+.main-nav:hover, .learn-more:hover {
+    background-color: #a5102e;
+    cursor: pointer;
+}
+
+/*********************************/
+/*            Main               */
+/*********************************/
+
+.deal-container h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.deals {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.deal-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.deal-item div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+.buy-now {
+    margin-top: 10px;
+    background-color: #c71236;
+    color: #fff;
+    height: 32px;
+    width: 80px;
+    text-align: center;
+    line-height: calc(75px / 2);
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+.buy-now:hover, .shop-fit:hover, .nike-shoe-name:hover, .form-submit:hover {
+    background-color: #a5102e;
+    cursor: pointer;
+}
+
+.deal-item img {
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.shoe-fit-container {
+    margin-top: 40px;
+    background-color: #ececec;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    gap: 20px;
+}
+
+.shoe-fit-container > div {
+    width: calc((100% - 40px - 10px) /3);
+}
+
+.mens-container,
+.womens-container,
+.kids-container {
+    position: relative;
+}
+
+.shoe-fit {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.shop-fit {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c71236;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoe-display-flex {
+    display: flex;
+    gap: 20px;
+    overflow: scroll; 
+    overflow-y: hidden;
+}
+
+.nike-shoe-display{
+    min-width: 400px;
+    position: relative;
+}
+
+.nike-shoe-img {
+    height: 360px; 
+    width: 540px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nike-shoe-name {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c71236;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.shoe-display-container h3 {
+    text-align: center;
+}
+
+.buy-now-chirstmas {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+/*********************************/
+/*            Contact            */
+/*********************************/
+
+.contact-form {
+    padding: 20px;
+}
+
+.contact-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.left-side-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    width: 360px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+}
+
+#message {
+    width: 360px;
+    height: 160px;
+    border-radius: 5px;
+    padding: 10px; 
+    resize: none;
+}
+
+#consent {
+    margin: 20px 0;
+}
+
+.form-submit {
+    background-color: #c71236;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea:focus, .form-input:focus {
+    border: 1px solid #a5102e;
 }
 
 /*********************************/
