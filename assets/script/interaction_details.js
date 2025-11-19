@@ -1,4 +1,4 @@
-//const product = ["text", "img", "img", "img"];
+const AeroFlow = ["Stride AeroFlow Running Shoe", "$129.99", "The Stride AeroFlow is engineered for comfort, speed, and durability. Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.", "../media/shoe.jpg"];
 let item = "";
 const txt1 = document.getElementById("product-name");
 const txt2 = document.getElementById("product-price");
