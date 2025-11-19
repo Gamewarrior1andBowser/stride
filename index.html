@@ -14,87 +14,326 @@
     </head>
     <body>
         <header>
-            <div class="header-bg-container">
-                <div class="header-master-container">
-                    <div class="company-header-bg">
-                        <div class="container">
-                            <div class="company-header-container">
-                                <img src="./media/stride-logo (2).png" alt="Stride Company Logo" height="200" width="200">
+        <div class="header-bg-container">
+            <div class="header-master-container">
+                 <div class="company-header-bg">
+                    <div class="container">
+                        <div class="company-header-container">
+                            <div class="company-logo-name">
+                                <img src="./assets/media/stride-logo.png" alt="Stride Company Logo">
                                 <h1>Stride</h1>
-                                <nav>
-                                    <ul>
-                                        <li>Home</li>
-                                        <li>About</li>
-                                        <li>Products</li>
-                                        <li>Contact</li>
-                                    </ul>
-                                </nav>
                             </div>
+                            <div class="search-container">
+                                <form action="" method="POST">
+                                    <div class="search-wrapper">
+                                        <span class="search-icon">⌕</span>
+                                        <input type="text" placeholder="Search" class="search-bar">
+                                    </div>
+                                </form>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <a class="main-nav" href="#overlay"><li>Home</li></a>
+                                    <a class="main-nav" href="#about-section"><li>About</li></a>
+                                    <a class="main-nav" href="#products"><li>Products</li></a>
+                                    <a class="main-nav" href="#contact"><li>Contact</li></a>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="shoe-companies-bg">
-                        <div class="container">
-                            <div class="shoe-companies-header-container">
-                                <nav>
-                                    <ul>
-                                        <li>Nike</li>
-                                        <li>Adidas</li>
-                                        <li>Jordan</li>
-                                        <li>Crocs</li>
-                                        <li>Timberland</li>
-                                    </ul>
-                                </nav>
-                            </div>
+                </div>
+                <div class="shoe-companies-bg">
+                    <div class="container">
+                        <div class="shoe-companies-header-container">
+                            <nav>
+                                <ul>
+                                    <li>Nike</li>
+                                    <li>Adidas</li>
+                                    <li>Jordan</li>
+                                    <li>Dunk</li>
+                                    <li>Puma</li>
+                                    <li>Under Armour</li>
+                                    <li>Crocs</li>
+                                    <li>Ugg</li>
+                                    <li>New Balance</li>
+                                    <li>Hoka</li>
+                                    <li>Timberland</li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <div> Hero banner(maybe might be contained in a section or some other box like thing) </div>
-        <section>Contains the products or services provided by the company. One of them(them maybe meaning one of the products or services, or a link to another part of the website)will take the user to the 'detail' page</section>
-        <!-- https://www.nike.com/ca/ I think we should make our website look similar to the Nike website-->
-        <section>
-            <h3>Our Black Friday Special</h3>
-            <img src="./media/corporate mens shoe.webp" alt="corporate men's shoe" height="200" width="200">
-            <img src="./media/corporate womens shoe.webp" alt="corporate women's shoe" height="200" width="200">
-            <img src="./media/corporate kids shoe.webp" alt="corporate kid's shoe" height="200" width="200">
-        </section>
-        <section>
-            <h3>For Men</h3>
-            <img src="./media/NIKE+P-6000  anime.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/NIKE+P-6000+PRM.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/NIKE+P-6000.webp" alt="third flag piece" height="200" width="200">
-        </section>
-        <section>
-            <h3>For Women</h3>
-            <img src="./media/womens shoe 1.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/womens shoe 2.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/womens shoe 3.webp" alt="third flag piece" height="200" width="200">
-        </section>
-        <section>
-            <h3>For Kids</h3>
-            <img src="./media/kids shoe.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/kids shoe 2.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/kids shoe 3.webp" alt="third flag piece" height="200" width="200">
-        </section>
-        <section>
-            <h3>Our Christmas special bundle</h3>
-            <img src="./media/christmas shoe 1.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/christmas shoes 2.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/christmas shoe 3.webp" alt="third flag piece" height="200" width="200">
-        </section>
-
-        <footer>
-            <section>Contact Us(must have a form)
-                <form>
-                    <input type="text" placeholder="Username">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Password">
-                    <button type="submit" placeholder="Sign In">Sign In</button>
-                </form>
-                <p>&copy; 2025 Stride, Inc. All rights reserved</p>
+        </div>
+    </header>
+    <main>
+        <div id="hero">
+            <div id="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-flex-col">
+                    <h2>One step at a time, every step with Stride</h2>
+                    <div class="hero-buttons">
+                        <a href="#products"><div id="shop">Shop</div></a>
+                        <a href="#about-section"><div id="about-us">About us</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about" id="about-section">
+                <div class="about-content-container">
+                    <div>
+                        <h3>About Stride</h3>
+                        <p>Here at Stride, we bring you the latest and greatest footwear from your favorites. We provide top brands like Nike, Adidas and many more. All in one place, so you can find the perfect pair for every style and every step. Whether it's quality, variety or pride, we want you to choose Stride.</p>
+                        <div class="learn-more"><a href="#">Learn more!</a></div>
+                    </div>
+                    <img src="https://images.pexels.com/photos/4328466/pexels-photo-4328466.jpeg" alt="Nike shoes">
+                </div>
+            </div>
+            <section>
+                <div class="deal-container" id="products">
+                    <h3>Our Black Friday Special</h3>
+                    <div class="deals">
+                        <div class="deal-item">
+                            <img src="./media/corporate mens shoe.webp" alt="corporate men's shoe" height="200" width="200">
+                            <div>
+                                <p>Men's Leather Dress Shoes - $124.99</p>
+                                <p>Classic Brown leather oxfords</p>
+                                <div class="buy-now">Buy Now</div>
+                            </div>
+                        </div>
+                        <div class="deal-item">
+                            <img src="./media/corporate womens shoe.webp" alt="corporate women's shoe" height="200" width="200">
+                            <div>
+                                <p>Women's Open-Toe Heels - $85.99</p>
+                                <p>Sleek grey heeled sandals</p>
+                                <div class="buy-now">Buy Now</div>
+                            </div>
+                        </div>
+                        <div class="deal-item">
+                            <img src="./media/corporate kids shoe.webp" alt="corporate kid's shoe" height="200" width="200">
+                            <div>
+                                <p>Kids' Loafers - $40</p>
+                                <p>Comfortable black loafers</p>
+                                <div class="buy-now">Buy Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <section>
+                <div class="shoe-fit-container">
+                    <div class="mens-container">
+                        <img class="shoe-fit" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/310088/04/mod02/fnd/PNA/fmt/png/MagMax-NITRO%E2%84%A2-Men's-Road-Running-Shoes" alt="Image of a Man for mens section">
+                        <div class="shop-fit">Shop Mens</div>
+                    </div>
+                    <div class="womens-container">
+                        <img class="shoe-fit" src="https://58v76y8z87lo.hellomagazine.com/horizon/portrait/f5646e894417-uggs-and-socks.jpg" alt="Image of a woman for womens section">
+                        <div class="shop-fit">Shop Women</div>
+                    </div>
+                    <div class="kids-container">
+                        <img class="shoe-fit" src="https://contents.mediadecathlon.com/p2421633/k$3e27397d7726ad7dd59ecdbfcd0e840a/picture.jpg" alt="Image of a child for kids section">
+                        <div class="shop-fit">Shop Kids</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="shoe-display-container">
+                    <h3>Nike</h3>
+                    <div class="shoe-display-flex">
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/b6d9c386-c769-4b5a-8053-6a25ae63f8e9/NIKE+AIR+FORCE+1+%2707+LV8.png" alt="first flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Air Force 1</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/f1683286-037e-4fb9-9e15-2b3991247599/W+NIKE+FREE+METCON+6.png" alt="second flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Free Metcon 6</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/5c2e08dc-9acc-473f-a308-c98ae2955f7e/AIR+MAX+90.png" alt="third flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Air Max 90</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/0333e735-1db1-43d1-b9d9-89fbb39a4179/AIR+ZOOM+PEGASUS+41.png" alt="fourth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Pegasus 41</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/525c15c8-ff31-4a90-b77f-259e4fecbc96/W+NIKE+ZOOM+VOMERO+5.png" alt="fifth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Zoom Vomero 5</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/0f76f73e-2578-4d62-abab-c5563ea4f78c/NIKE+DUNK+LOW+RETRO.png" alt="sixth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Dunk Low Retro</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/jn75onfybfp2s3046p8w/NIKE+SHOX+R4.png" alt="seventh flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Shox R4</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/96405d43-f9e7-47dc-b151-881b8c1228a5/AIR+ZOOM+PEGASUS+41+SE.png" alt="eigth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Pegasus 41 SE</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/fc118f63-82ba-444e-ac67-b5952f3603c3/W+AIR+FORCE+1+%2707+VINTAGE.png" alt="ninth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Air Force 1 '07 Vintage</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/26642b0e-5ad6-4e1a-9093-4a5672f2a63d/BOOK+1.png" alt="tenth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Book 1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe-display-container">
+                    <h3>Adidas</h3>
+                    <div class="shoe-display-flex">
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/9efae4b5ffea4358a156b73db0c88f27_9366/Forum_Low_CL_Shoes_White_IH7830_01_standard.jpg" alt="first flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Forum Low CL</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/8943df93a9e94f81adb7af63011856c7_9366/Campus_00s_Shoes_Black_HQ6638_01_standard.jpg" alt="second flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Campus 00s</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/698e41ae0196408eb16aa7fb008046ad_9366/Gazelle_Shoes_Blue_BB5478_01_standard.jpg" alt="third flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Gazelle</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/4c0a594ea1044fca861685ef4eb7852f_9366/Samba_OG_Shoes_Beige_JS3935_01_00_standard.jpg" alt="fourth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Samba OG</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/cb1316406e584892bdb3a991001bd46d_9366/Adilette_Aqua_Slides_Black_F35543_01_standard.jpg" alt="fifth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Adilette Aqua Slides</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/b9ff367c75b24680bf46fc64786d950d_9366/Sambae_Shoes_Black_JI1350_01_standard.jpg" alt="sixth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Sambae</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/44fc1e826e1e46f3a99a1bdad718fa93_9366/Sambae_Shoes_White_JS3953_01_00_standard.jpg" alt="seventh flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Sambae</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/37063c05f9e342c4804b8826d35b86ac_9366/Handball_Spezial_Shoes_Red_JR3607_01_00_standard.jpg" alt="eigth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Handball Spezial</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/5956ac29621746eaba60cf76ffc66c80_9366/ADIDAS_MINECRAFT_FORTARUN_4.0_SHOES_CHILDREN_Purple_JR1950_01_00_standard.jpg" alt="ninth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Minecraft Fortarun</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.adidas.com/images/h_2000,f_auto,q_auto,fl_lossy,c_fill,g_auto/aabfff63882c440ba9a6444bde57b262_9366/Gazelle_Bold_Shoes_Brown_JQ3582_01_00_standard.jpg" alt="tenth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Gazelle Bold</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe-display-container">
+                    <h3>Timberland</h3>
+                    <div class="shoe-display-flex">
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.timberland.com/images/t_img/f_auto,h_650,e_sharpen:60,w_650/dpr_2.0/v1741199070/TB110061713-HERO/Mens-Timberland-Premium-6Inch-Waterproof-Boot.png" alt="first flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Timberland Premium</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.timberland.com/images/t_img/f_auto,h_650,e_sharpen:60,w_650/dpr_2.0/v1718954568/TB1A22H2231-HERO/Mens-Timberland-PRO-Waterproof-Iconic-Work-Boot.png" alt="second flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Timberland Pro</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.timberland.com/images/t_img/f_auto,h_650,e_sharpen:60,w_650/dpr_2.0/v1718938630/TB0A66KYEM4-HERO/Mens-Timberland-PRO-BOA-Boondock-6-Composite-Toe-Work-Boot.png" alt="third flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Boondock CSA</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.timberland.com/images/t_img/f_auto,h_650,e_sharpen:60,w_650/dpr_2.0/v1718941975/TB110073001-HERO/Mens-Timberland-Premium-6Inch-Waterproof-Boot.png" alt="fourth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Timberland Premium</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="https://assets.timberland.com/images/t_img/f_auto,h_650,e_sharpen:60,w_650/dpr_2.0/v1735848888/TB0A6DX6EL0-HERO/Mens-Motion-Access-Mid-Waterproof-Sneaker.png" alt="fifth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Motion Access</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="deal-container">
+                    <h3>Our Christmas Special Bundle</h3>
+                    <div class="deals">
+                        <div class="deal-item">
+                            <img src="./media/christmas shoe 1.webp" alt="first flag piece" height="200" width="200">
+                        </div>
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="deal-item">
+                            <img src="./media/christmas shoes 2.webp" alt="second flag piece" height="200" width="200">
+                        </div>
+                        <i class="fa-solid fa-plus"></i>
+                        <div class="deal-item">
+                            <img src="./media/christmas shoe 3.webp" alt="third flag piece" height="200" width="200">
+                        </div>
+                    </div>
+                    <div class="buy-now-chirstmas">
+                        <div class="buy-now">Buy Now</div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section" id="contact">
+                <h3>Contact Us</h3>
+                <form class="contact-form" novalidate>
+                    <div class="form-flex">
+                        <div class="left-side-form">
+                            <div class="form-info">
+                                <input class="form-input" type="text" id="name" name="name" required minlength="2" placeholder="Full Name">
+                            </div>
+                            <div class="form-info">
+                                <input class="form-input" type="email" id="email" name="email" required placeholder="Email@example.com">
+                            </div>
+                            <div class="form-info">
+                                <select class="form-input" id="subject" name="subject" required>
+                                    <option value="">Select a Topic</option>
+                                    <option value="order">Order Issue</option>
+                                    <option value="return">Return/Exchange</option>
+                                    <option value="general">General</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <textarea id="message" name="message" required minlength="10" placeholder="Enter your message here..." rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label class="consent" for="consent">I agree to the terms of service and privacy policy</label>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+        <footer>
+            <div class="footer-flex">
+                <div class="footer-flex-col">
+                    <h4>Help</h4>
+                    <p>Get help</p>
+                    <p>Order Status</p>
+                    <p>Returns</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footer-flex-col">
+                    <h4>Resources</h4>
+                    <p>Find a Warehouse</p>
+                    <p>Feedback</p>
+                    <p>Join the crew</p>
+                </div>
+                <div class="footer-flex-col">
+                    <h4>Company</h4>
+                    <p>About Us</p>
+                    <p>News</p>
+                    <p>Careers</p>
+                    <p>Invest</p>
+                    <p>Work with Us</p>
+                </div>
+            </div>
+            <p id="copyright">&copy; 2025 Stride, Inc. All rights reserved</p>
         </footer>
     </body>
 </html>
