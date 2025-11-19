@@ -16,7 +16,7 @@
                 <div class="container">
                     <div class="company-header-container">
                         <div class="company-logo-name">
-                            <img src="./assets/media/stride-logo.png" alt="Stride Company Logo">
+                            <a href="index.html"><img src="./assets/media/stride-logo.png" alt="Stride Company Logo"></a>
                             <h1>Stride</h1>
                         </div>
                         <div class="search-container">
@@ -29,12 +29,13 @@
                         </div>
                         <nav>
                             <ul>
-                                <a class="main-nav" href="#overlay"><li>Home</li></a>
-                                <a class="main-nav" href="#about-section"><li>About</li></a>
-                                <a class="main-nav" href="#products"><li>Products</li></a>
+                                <a class="main-nav" href="index.html#overlay"><li>Home</li></a>
+                                <a class="main-nav" href="index.html#about-section"><li>About</li></a>
+                                <a class="main-nav" href="index.html#products"><li>Products</li></a>
                                 <a class="main-nav" href="#contact"><li>Contact</li></a>
                             </ul>
                         </nav>
+                        <i class="fa-solid fa-circle-user"></i>
                     </div>
                 </div>
             </div>
@@ -44,6 +45,9 @@
     <div class="container">
         <div class="login-dialog" id="loginDialog">
             <div class="login-box">
+                <div class="x-container">
+                    <i id="x" class="fa-solid fa-x"></i>
+                </div>
                 <h2>Login</h2>
                 <form id="loginForm">
                     <div class="login-flex">
@@ -63,86 +67,75 @@
                 </form>
             </div>
         </div>
-
-        <!--product details-->
-        <section class="product-detail container">
-            <div class="product-gallery">
-                <img src="./shoe.jpg" alt="Stride Running Shoe" class="product-img">
-            </div>
-
+        <section class="product-detail-container">
             <div class="product-info">
-                <h1  class="product-name">Stride AeroFlow Running Shoe</h1>
-
-                <p class="product-price">$129.99</p>
-
-                <p class="product-description">
-                    The Stride AeroFlow is engineered for comfort, speed, and durability. 
-                    Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — 
-                    perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.
-                </p>
-
-                <ul class="product-features">
-                    <li>Lightweight aerodynamic design</li>
-                    <li>Breathable mesh upper</li>
-                    <li>Shock-absorbing midsole</li>
-                    <li>Non-slip rubber outsole</li>
-                    <li>Available in multiple sizes</li>
-                </ul>
-
-                <button class="add-cart-btn">Add to Cart</button>
+                <h1 class="product-name">Stride AeroFlow Running Shoe</h1>
+                <img class="shoe-prod-img" src="./assets/media/stride-shoe.png" alt="shoe image">
+                <div class="product-info-container">
+                    <div class="description-container">
+                        <p class="product-description">
+                            The Stride AeroFlow marks a hige milestone for our team - The first-ever shoe designed and produced in-house by Stride. After years of curating the best footwear from top brands, we wanted to create something that truly represents who we are, fast, clean, reliable and built for everyone.
+                        </p>
+                        <p>    
+                            The Stride AreFlow is engineered for comfort, speed, and durability. 
+                            Featuring breathable mesh fabric, ultra-light cushioning, and a supportive sole — 
+                            perfect for running, training, or everyday wear. It fits naturally around your foot, giving you a light and comfortable feel from the moment you put it on. The mesh design allows plenty of airflow, so your feet stay cool and dry even during long runs or workouts. It’s built to support you through any activity without feeling heavy.
+                        </p>
+                        <p class="product-price">$129.99</p>
+                    </div>
+                    <div class="features-container">
+                        <ul class="product-features">
+                            <li>Lightweight aerodynamic design</li>
+                            <li>Breathable mesh upper</li>
+                            <li>Shock-absorbing midsole</li>
+                            <li>Non-slip rubber outsole</li>
+                            <li>Available in multiple sizes</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="cart-btn-container">
+                    <button class="add-cart-btn">Add to Cart</button>
+                </div>
             </div>
         </section>
-
-        <!--contact form-->
-        <section id="contact" class="contact-section container">
-            <h2>Contact Us</h2>
-
-            <form class="contact-form" id="contactForm">
-
-                <div class="name-fields">
-                    <div>
-                        <label>First Name</label>
-                        <input type="text" required>
+        <section class="contact-section" id="contact">
+                <h3>Contact Us</h3>
+                <form class="contact-form" novalidate>
+                    <div class="form-flex">
+                        <div class="left-side-form">
+                            <div class="form-info">
+                                <input class="form-input" type="text" id="name" name="name" required minlength="2" placeholder="Full Name">
+                            </div>
+                            <div class="form-info">
+                                <input class="form-input" type="email" id="email" name="email" required placeholder="Email@example.com">
+                            </div>
+                            <div class="form-info">
+                                <input class="form-input" type="tel" placeholder="+1 647-000-0000" required>
+                            </div>
+                            <select class="form-input" id="subject" name="subject" required>
+                                    <option value="">Select a Topic</option>
+                                    <option value="order">Order Issue</option>
+                                    <option value="return">Return/Exchange</option>
+                                    <option value="general">General</option>
+                                    <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-info" id="form-info">
+                            <textarea id="message" name="message" required minlength="10" placeholder="Enter your message here..." rows="5"></textarea>
+                            <label>Preferred Contact Method</label>
+                            <div class="contact-method">
+                                <label><input type="radio" name="method" required> Email</label>
+                                <label><input type="radio" name="method"> Phone</label>
+                        </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <label>Last Name</label>
-                        <input type="text" required>
+                    <div class="form-info">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label class="consent" for="consent">I agree to the terms of service and privacy policy</label>
                     </div>
-                </div>
-
-                <label>Email</label>
-                <input type="email" required>
-
-                <label>Phone Number</label>
-                <input type="tel" placeholder="+1 647-000-0000" required>
-
-                <label>Subject</label>
-                <select required>
-                    <option value="">Choose a subject</option>
-                    <option>Order Inquiry</option>
-                    <option>Return/Refund</option>
-                    <option>Product Question</option>
-                    <option>Business Collaboration</option>
-                    <option>Other</option>
-                </select>
-
-                <label>Preferred Contact Method</label>
-                <div class="contact-method">
-                    <label><input type="radio" name="method" required> Email</label>
-                    <label><input type="radio" name="method"> Phone</label>
-                </div>
-
-                <label>Message</label>
-                <textarea rows="5" required></textarea>
-
-                <label class="terms">
-                    <input type="checkbox" required> I agree to the terms and conditions
-                </label>
-
-                <button type="submit" class="contact-submit">Send Message</button>
-            </form>
-        </section>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </section>
         </div>
     </main>
     <footer>
