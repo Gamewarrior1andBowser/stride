@@ -129,6 +129,14 @@ header img {
 header {
     color: #fff;
 }
+
+i {
+    font-size: 32px;
+}
+
+i:hover {
+    cursor: pointer;
+}
  
 
 /*********************************/
