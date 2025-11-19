@@ -44,17 +44,22 @@
     <div class="container">
         <div class="login-dialog" id="loginDialog">
             <div class="login-box">
-                <span class="close-login" id="closeLogin">&times;</span>
                 <h2>Login</h2>
-
                 <form id="loginForm">
-                    <label>Email</label>
-                    <input type="email" required>
-
-                    <label>Password</label>
-                    <input type="password" required>
-
-                    <button type="submit" class="submit-login">Login</button>
+                    <div class="login-flex">
+                        <div class="login-flex-col">
+                            <label>Email:</label>
+                            <input class="login-input" type="email" placeholder="email@email.org" required>
+                        </div>
+                        <div class="login-flex-col">
+                            <label>Password:</label>
+                            <input class="login-input" type="password" required>
+                        </div>
+                    </div>
+                    <div class="login-buttons">
+                        <button type="submit" class="submit-login">Login</button>
+                        <div class="create-login">Create Account</div>
+                    </div>
                 </form>
             </div>
         </div>
