@@ -10,13 +10,9 @@
 /*            Header              */
 /**********************************/
 
-.main-nav {
-    color: #fff;
-    text-decoration: none;
-}
-
 .header-bg-container, .header-master-container {
     height: 60px;
+    background-color: azure;
 }
 
 .header-master-container, 
@@ -51,7 +47,7 @@ ul {
 }
 
 .company-header-container li {
-    padding: 20px 20px;
+    padding: 18px 20px;
     transition: all 0.25s ease-in-out;
 }
 
@@ -103,14 +99,7 @@ header img {
     font-size: 32px;
 }
 
-.shoe-companies-header-container li {
-    padding: 0 15px;
-    transition: all 0.25s ease-in-out;
-    font-size: 12px;
-    font-weight: 500;
-}
-
-.shoe-companies-header-container li:hover {
-    background-color: #a5102e;
-    cursor: pointer;
+.main-nav {
+    color: #fff;
+    text-decoration: none;
 }
