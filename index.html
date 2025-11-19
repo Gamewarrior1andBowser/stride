@@ -6,95 +6,331 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./assets/style/index.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"/>
-        <link rel="icon" href="./assets/media/favicon.png" type="image/x-icon">
+        <link rel="icon" href="./assets/media/stride-logo.png" type="image/x-icon">
         <title>Stride</title>
-        <!-- <meta name="author" content="Emmanuel Olannye">
-        <meta name="description" content="My first company">
-        <meta name="keywords" content="html, css, web, web development, javascript"> -->
     </head>
     <body>
         <header>
-            <div class="header-bg-container">
-                <div class="header-master-container">
-                    <div class="company-header-bg">
-                        <div class="container">
-                            <div class="company-header-container">
-                                <img src="./media/stride-logo (2).png" alt="Stride Company Logo" height="200" width="200">
+        <div class="header-bg-container">
+            <div class="header-master-container">
+                 <div class="company-header-bg">
+                    <div class="container">
+                        <div class="company-header-container">
+                            <div class="company-logo-name">
+                                <img src="./assets/media/stride-logo.png" alt="Stride Company Logo">
                                 <h1>Stride</h1>
-                                <nav>
-                                    <ul>
-                                        <li>Home</li>
-                                        <li>About</li>
-                                        <li>Products</li>
-                                        <li>Contact</li>
-                                    </ul>
-                                </nav>
                             </div>
+                            <div class="search-container">
+                                <form action="" method="POST">
+                                    <div class="search-wrapper">
+                                        <span class="search-icon">⌕</span>
+                                        <input type="text" placeholder="Search" class="search-bar">
+                                    </div>
+                                </form>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <a class="main-nav" href="#overlay"><li>Home</li></a>
+                                    <a class="main-nav" href="#about-section"><li>About</li></a>
+                                    <a class="main-nav" href="#products"><li>Products</li></a>
+                                    <a class="main-nav" href="#contact"><li>Contact</li></a>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                    <div class="shoe-companies-bg">
-                        <div class="container">
-                            <div class="shoe-companies-header-container">
-                                <nav>
-                                    <ul>
-                                        <li>Nike</li>
-                                        <li>Adidas</li>
-                                        <li>Jordan</li>
-                                        <li>Crocs</li>
-                                        <li>Timberland</li>
-                                    </ul>
-                                </nav>
-                            </div>
+                </div>
+                <div class="shoe-companies-bg">
+                    <div class="container">
+                        <div class="shoe-companies-header-container">
+                            <nav>
+                                <ul>
+                                    <li>Nike</li>
+                                    <li>Adidas</li>
+                                    <li>Jordan</li>
+                                    <li>Dunk</li>
+                                    <li>Puma</li>
+                                    <li>Under Armour</li>
+                                    <li>Crocs</li>
+                                    <li>Ugg</li>
+                                    <li>New Balance</li>
+                                    <li>Hoka</li>
+                                    <li>Timberland</li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-
-        <div> Hero banner(maybe might be contained in a section or some other box like thing) </div>
-        <section>Contains the products or services provided by the company. One of them(them maybe meaning one of the products or services, or a link to another part of the website)will take the user to the 'detail' page</section>
-        <!-- https://www.nike.com/ca/ I think we should make our website look similar to the Nike website-->
-        <section>
-            <h3>Our Black Friday Special</h3>
-            <img src="./media/corporate mens shoe.webp" alt="corporate men's shoe" height="200" width="200">
-            <img src="./media/corporate womens shoe.webp" alt="corporate women's shoe" height="200" width="200">
-            <img src="./media/corporate kids shoe.webp" alt="corporate kid's shoe" height="200" width="200">
-        </section>
-        <section>
-            <h3>For Men</h3>
-            <img src="./media/NIKE+P-6000  anime.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/NIKE+P-6000+PRM.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/NIKE+P-6000.webp" alt="third flag piece" height="200" width="200">
-        </section>
-        <section>
-            <h3>For Women</h3>
-            <img src="./media/womens shoe 1.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/womens shoe 2.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/womens shoe 3.webp" alt="third flag piece" height="200" width="200">
-        </section>
-        <section>
-            <h3>For Kids</h3>
-            <img src="./media/kids shoe.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/kids shoe 2.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/kids shoe 3.webp" alt="third flag piece" height="200" width="200">
-        </section>
-        <section>
-            <h3>Our Christmas special bundle</h3>
-            <img src="./media/christmas shoe 1.webp" alt="first flag piece" height="200" width="200">
-            <img src="./media/christmas shoes 2.webp" alt="second flag piece" height="200" width="200">
-            <img src="./media/christmas shoe 3.webp" alt="third flag piece" height="200" width="200">
-        </section>
-
-        <footer>
-            <section>Contact Us(must have a form)
-                <form>
-                    <input type="text" placeholder="Username">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Password">
-                    <button type="submit" placeholder="Sign In">Sign In</button>
-                </form>
-                <p>&copy; 2025 Stride, Inc. All rights reserved</p>
+        </div>
+    </header>
+    <main>
+        <div id="hero">
+            <div id="overlay"></div>
+            <div class="hero-content">
+                <div class="hero-flex-col">
+                    <h2>One step at a time, every step with Stride</h2>
+                    <div class="hero-buttons">
+                        <a href="#products"><div id="shop">Shop</div></a>
+                        <a href="#about-section"><div id="about-us">About us</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="about" id="about-section">
+                <div class="about-content-container">
+                    <div>
+                        <h3>About Stride</h3>
+                        <p>Here at Stride, we bring you the latest and greatest footwear from your favorites. We provide top brands like Nike, Adidas and many more. All in one place, so you can find the perfect pair for every style and every step. Whether it's quality, variety or pride, we want you to choose Stride.</p>
+                        <div class="learn-more"><a href="#">Learn more!</a></div>
+                    </div>
+                    <img src="./assets/media/nike-shoes-about.jpeg" alt="Nike shoes">
+                </div>
+            </div>
+            <section>
+                <div class="deal-container" id="products">
+                    <h3>Our Black Friday Special</h3>
+                    <div class="deals">
+                        <div class="deal-item">
+                            <img src="./media/corporate mens shoe.webp" alt="corporate men's shoe" height="200" width="200">
+                            <div>
+                                <p>Men's Leather Dress Shoes - $124.99</p>
+                                <p>Classic Brown leather oxfords</p>
+                                <div class="buy-now">Buy Now</div>
+                            </div>
+                        </div>
+                        <div class="deal-item">
+                            <img src="./media/corporate womens shoe.webp" alt="corporate women's shoe" height="200" width="200">
+                            <div>
+                                <p>Women's Open-Toe Heels - $85.99</p>
+                                <p>Sleek grey heeled sandals</p>
+                                <div class="buy-now">Buy Now</div>
+                            </div>
+                        </div>
+                        <div class="deal-item">
+                            <img src="./media/corporate kids shoe.webp" alt="corporate kid's shoe" height="200" width="200">
+                            <div>
+                                <p>Kids' Loafers - $40</p>
+                                <p>Comfortable black loafers</p>
+                                <div class="buy-now">Buy Now</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <section>
+                <div class="shoe-fit-container">
+                    <div class="mens-container">
+                        <img class="shoe-fit" src="./assets/media/nike-man.avif" alt="Image of a Man for mens section">
+                        <div class="shop-fit">Shop Mens</div>
+                    </div>
+                    <div class="womens-container">
+                        <img class="shoe-fit" src="./assets/media/woman-shoe.webp" alt="Image of a woman for womens section">
+                        <div class="shop-fit">Shop Women</div>
+                    </div>
+                    <div class="kids-container">
+                        <img class="shoe-fit" src="./assets/media/kid-shoe.jpg" alt="Image of a child for kids section">
+                        <div class="shop-fit">Shop Kids</div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="shoe-display-container">
+                    <h3>Nike</h3>
+                    <div class="shoe-display-flex">
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/af1.avif" alt="first flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Air Force 1</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/metcon.avif" alt="second flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Free Metcon 6</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/air-max.avif" alt="third flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Air Max 90</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/zoom-peg.avif" alt="fourth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Pegasus 41</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/zoom-vo.avif" alt="fifth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Zoom Vomero 5</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/dunk-low.avif" alt="sixth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Dunk Low Retro</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/shox.avif" alt="seventh flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Shox R4</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/pegasus.avif" alt="eigth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Pegasus 41 SE</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/vintage.avif" alt="ninth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Air Force 1 '07 Vintage</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/book1.avif" alt="tenth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Book 1</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe-display-container">
+                    <h3>Adidas</h3>
+                    <div class="shoe-display-flex">
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/low-cl.avif" alt="first flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Forum Low CL</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/campus_001.avif" alt="second flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Campus 00s</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/gazelle.avif" alt="third flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Gazelle</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/og.avif" alt="fourth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Samba OG</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/aqua.avif" alt="fifth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Adilette Aqua Slides</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/sambae.avif" alt="sixth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Sambae</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/samba-white.avif" alt="seventh flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Sambae</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/spez.avif" alt="eigth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Handball Spezial</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/minecraft.avif" alt="ninth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Minecraft Fortarun</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/gazelle-brn.avif" alt="tenth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Gazelle Bold</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shoe-display-container">
+                    <h3>Timberland</h3>
+                    <div class="shoe-display-flex">
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/timb.avif" alt="first flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Timberland Premium</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/timb-light.avif" alt="second flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Timberland Pro</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/timb-pro.avif" alt="third flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Boondock CSA</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/timb-blck.avif" alt="fourth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Timberland Premium</div>
+                        </div>
+                        <div class="nike-shoe-display">
+                            <img src="./assets/media/motion.avif" alt="fifth flag piece" class="nike-shoe-img">
+                            <div class="nike-shoe-name">Motion Access</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="deal-container">
+                    <h3>Our Christmas Special Bundle</h3>
+                    <div class="deals">
+                      <div class="deal-item">
+                          <img src="./assets/media/christmas shoe 1.webp" alt="first flag piece" height="200" width="200">
+                      </div>
+                      <i class="fa-solid fa-plus"></i>
+                      <div class="deal-item">
+                          <img src="./assets/media/christmas shoes 2.webp" alt="second flag piece" height="200" width="200">
+                      </div>
+                      <i class="fa-solid fa-plus"></i>
+                      <div class="deal-item">
+                          <img src="./assets/media/christmas shoe 3.webp" alt="third flag piece" height="200" width="200">
+                      </div>
+                    </div>
+                    <div class="buy-now-chirstmas">
+                        <div class="buy-now">Buy Now</div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact-section" id="contact">
+                <h3>Contact Us</h3>
+                <form class="contact-form" novalidate>
+                    <div class="form-flex">
+                        <div class="left-side-form">
+                            <div class="form-info">
+                                <input class="form-input" type="text" id="name" name="name" required minlength="2" placeholder="Full Name">
+                            </div>
+                            <div class="form-info">
+                                <input class="form-input" type="email" id="email" name="email" required placeholder="Email@example.com">
+                            </div>
+                            <div class="form-info">
+                                <select class="form-input" id="subject" name="subject" required>
+                                    <option value="">Select a Topic</option>
+                                    <option value="order">Order Issue</option>
+                                    <option value="return">Return/Exchange</option>
+                                    <option value="general">General</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-info">
+                            <textarea id="message" name="message" required minlength="10" placeholder="Enter your message here..." rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-info">
+                        <input type="checkbox" id="consent" name="consent" required>
+                        <label class="consent" for="consent">I agree to the terms of service and privacy policy</label>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </main>
+        <footer>
+            <div class="footer-flex">
+                <div class="footer-flex-col">
+                    <h4>Help</h4>
+                    <p>Get help</p>
+                    <p>Order Status</p>
+                    <p>Returns</p>
+                    <p>Contact Us</p>
+                </div>
+                <div class="footer-flex-col">
+                    <h4>Resources</h4>
+                    <p>Find a Warehouse</p>
+                    <p>Feedback</p>
+                    <p>Join the crew</p>
+                </div>
+                <div class="footer-flex-col">
+                    <h4>Company</h4>
+                    <p>About Us</p>
+                    <p>News</p>
+                    <p>Careers</p>
+                    <p>Invest</p>
+                    <p>Work with Us</p>
+                </div>
+            </div>
+            <p id="copyright">&copy; 2025 Stride, Inc. All rights reserved</p>
         </footer>
     </body>
 </html>
