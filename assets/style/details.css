@@ -168,3 +168,59 @@ i {
     justify-content: center;
     place-items: center;
 }
+
+.contact-form {
+    padding: 20px;
+}
+
+.contact-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form-flex {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+}
+
+.left-side-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    width: 360px;
+    height: 40px;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+}
+
+#message {
+    width: 360px;
+    height: 160px;
+    border-radius: 5px;
+    padding: 10px; 
+    resize: none;
+}
+
+#consent {
+    margin: 20px 0;
+}
+
+.form-submit {
+    background-color: #c71236;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+textarea:focus, .form-input:focus {
+    border: 1px solid #a5102e;
+}
