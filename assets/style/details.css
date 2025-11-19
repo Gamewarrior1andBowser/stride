@@ -6,6 +6,38 @@
     transition: all 0.25s ease-in-out;
 }
 
+h1 {
+    margin-right: 5px;
+}
+
+.header-bg-container, .header-master-container {
+    height: 60px;
+}
+
+.company-header-bg {
+    height: 60px;
+    background-color: #DC143C;
+}
+
+.company-header-container {
+    height: 60px;    
+    justify-content: space-between;
+    place-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    background-color: #c71236;
+    padding: 2px 15px 2px 35px;
+    border-radius: 50px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+i {
+    font-size: 32px;
+}
+
 .login-box {
     margin-top: 40px;
     background-color: #ececec;
@@ -65,7 +97,7 @@
     cursor: pointer;
 }
 
-.create-login {
+.create-login, .add-cart-btn {
     background-color: #525252;
     color: #fff;
     padding: 5px 10px;
@@ -77,11 +109,62 @@
     justify-content: center;    
 }
 
-.create-login:hover {
+.create-login:hover, .add-cart-btn:hover {
     background-color: #686868;
     cursor: pointer;
 }
 
 .login-input:focus {
     border: 1px solid #a5102e;
+}
+
+.product-info {
+    margin-top: 40px;
+    background-color: #ececec;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.product-info h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.shoe-prod-img {
+    border-radius: 50px;
+    width: 100%;
+}
+
+.product-info-container {
+    padding: 40px;
+}
+
+.product-info-container, .description-container, .features-container ul {
+    display: flex;
+    gap: 40px;
+}
+
+.description-container {
+    width: 75%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.features-container {
+    width: 25%;
+}
+
+.description-container, .features-container ul {
+    flex-direction: column;
+    list-style: circle;
+}
+
+.product-price {
+    font-weight: 500;
+}
+
+.cart-btn-container {
+    display: flex;
+    justify-content: center;
+    place-items: center;
 }
