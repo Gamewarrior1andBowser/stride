@@ -1,6 +1,7 @@
 @import "./reset.css";
+@import "./index.css";
 
-.container{
+/* .container{
     width: min(100% - 30px, 1080px);
     margin-inline: auto;
     height: 100%;
@@ -10,7 +11,7 @@
 /*            Header              */
 /**********************************/
 
-.header-bg-container, .header-master-container {
+/* .header-bg-container, .header-master-container {
     height: 60px;
     background-color: azure;
 }
@@ -102,4 +103,39 @@ header img {
 .main-nav {
     color: #fff;
     text-decoration: none;
+} */ 
+
+/**********************************/
+/*             Body               */
+/**********************************/
+
+
+/**********************************/
+/*            Footer              */
+/**********************************/
+
+/* footer {
+    background-color: #DC143C;
+    color: #fff;
+    text-align: center;
+    /* line-height: 60px; 
+    padding: 20px;
 }
+
+.footer-flex {
+    justify-content: space-around;
+}
+
+.footer-flex-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer p:hover {
+    cursor: pointer;
+}
+
+#copyright {
+    padding-top: 20px;
+} */
