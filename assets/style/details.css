@@ -1,6 +1,10 @@
 @import "./reset.css";
 @import "./index.css";
 
+/**************************************/
+/*               Header               */
+/**************************************/
+
 .company-header-container li {
     padding: 18px 20px;
     transition: all 0.25s ease-in-out;
@@ -41,6 +45,10 @@ i {
 i:hover {
     cursor: pointer;
 }
+
+/**************************************/
+/*               Login                */
+/**************************************/
 
 .login-box {
     margin-top: 40px;
@@ -122,12 +130,30 @@ i:hover {
     border: 1px solid #a5102e;
 }
 
+.x-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#x {
+    color: #DC143C;
+    font-size: 16px;
+}
+
+/**************************************/
+/*       Background/Container         */
+/**************************************/
+
 .contact-section, .product-detail-container {
     margin-top: 40px;
     background-color: #ececec;
     padding: 20px;
     border-radius: 5px;
 }
+
+/**************************************/
+/*           Shoe Product             */
+/**************************************/
 
 .product-info h1 {
     text-align: center;
@@ -172,6 +198,10 @@ i:hover {
     justify-content: center;
     place-items: center;
 }
+
+/**************************************/
+/*              Contact               */
+/**************************************/
 
 .contact-form {
     padding: 20px;
@@ -236,14 +266,4 @@ textarea:focus, .form-input:focus {
 
 textarea {
     margin-bottom: 20px;
-}
-
-.x-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#x {
-    color: #DC143C;
-    font-size: 16px;
 }
