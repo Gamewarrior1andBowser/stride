@@ -109,7 +109,7 @@ i:hover {
     cursor: pointer;
 }
 
-.create-login, .add-cart-btn {
+.create-login, .add-cart-btn, .left, .right {
     background-color: #525252;
     color: #fff;
     padding: 5px 10px;
@@ -121,7 +121,7 @@ i:hover {
     justify-content: center;    
 }
 
-.create-login:hover, .add-cart-btn:hover {
+.create-login:hover, .add-cart-btn:hover, .left:hover, .right:hover {
     background-color: #686868;
     cursor: pointer;
 }
@@ -197,6 +197,16 @@ i:hover {
     display: flex;
     justify-content: center;
     place-items: center;
+}
+
+.index-container, .last-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.last-btn-container {
+    gap: 20px;
+    padding: 20px;
 }
 
 /**************************************/

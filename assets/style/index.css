@@ -26,6 +26,10 @@ ul {
     display: flex;
 }
 
+    .company-logo-name h1 {
+        padding-right: 25px;
+    } 
+
 .header-master-container {
     flex-direction: column; 
 }
@@ -64,7 +68,7 @@ header img {
 }
 
 .search-wrapper {
-    width: 100%;
+    width: 95%;
     position: relative;
 }
 
