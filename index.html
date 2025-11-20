@@ -36,7 +36,7 @@
                                     <a class="main-nav" href="#contact"><li>Contact</li></a>
                                 </ul>
                             </nav>
-                            <i class="fa-solid fa-circle-user"></i>
+                            <i id="modal-open" class="fa-solid fa-circle-user"></i>
                         </div>
                     </div>
                 </div>
@@ -78,6 +78,35 @@
             </div>
         </div>
         <div class="container">
+            <div id="modal" class="modal hidden">
+                <div class="modal-content hidden">
+                   <div class="login-dialog" id="loginDialog">
+            <div class="login-box">
+                <div class="x-container">
+                    <i id="x" class="fa-solid fa-x"></i>
+                </div>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <div class="login-flex">
+                        <div class="login-flex-col">
+                            <label>Email:</label>
+                            <input class="login-input" type="email" placeholder="email@email.org" required>
+                        </div>
+                        <div class="login-flex-col">
+                            <label>Password:</label>
+                            <input class="login-input" type="password" required>
+                        </div>
+                    </div>
+                    <div class="login-buttons">
+                        <button type="submit" class="submit-login">Login</button>
+                        <div class="create-login">Create Account</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+                    </div>
+                </div>
+            </div>
             <div class="about" id="about-section">
                 <div class="about-content-container">
                     <div>
@@ -333,5 +362,6 @@
             </div>
             <p id="copyright">&copy; 2025 Stride, Inc. All rights reserved</p>
         </footer>
+        <script src="./assets/script/interaction_index.js"></script>
     </body>
 </html>
