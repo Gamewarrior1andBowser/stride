@@ -12,6 +12,18 @@ const buttonLeft = document.querySelector(".left");
 const buttonRight = document.querySelector(".right");
 const indexDisplay = document.querySelector(".index");
 const productDisplay = document.querySelector(".maximum");
+const login = document.querySelector(".login-dialog");
+const button = document.querySelector(".fa-x");
+const user = document.querySelector(".fa-circle-user");
+
+
+user.addEventListener('click', function() {
+  login.classList.add('visible');
+});
+
+button.addEventListener('click', function() {
+  login.classList.remove('visible');
+});
 
 function switchProduct() {
   indexDisplay.innerText = String(index + 1);
