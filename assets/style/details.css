@@ -49,6 +49,10 @@ i:hover {
 /**************************************/
 /*               Login                */
 /**************************************/
+.login-dialog {
+  visibility: collapse;
+  height: 0px;
+}
 
 .login-box {
     margin-top: 40px;
@@ -138,6 +142,11 @@ i:hover {
 #x {
     color: #DC143C;
     font-size: 16px;
+}
+
+.visible {
+    visibility: visible;
+    height: 100%;
 }
 
 /**************************************/
