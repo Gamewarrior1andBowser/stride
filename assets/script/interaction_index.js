@@ -1,12 +1,12 @@
-const login = document.querySelector(".login");
-const popup = document.querySelector(".popup");
+const login = document.querySelector(".login-dialog");
+const button = document.querySelector(".fa-x");
+const user = document.querySelector(".fa-circle-user");
 
-/*
-popup.addEventListener('click', function() {
-  profile.classList.toggle('visible');
+
+user.addEventListener('click', function() {
+  login.classList.add('visible');
 });
 
-login.addEventListener('click', function() {
-  profile.classList.toggle('visible');
+button.addEventListener('click', function() {
+  login.classList.remove('visible');
 });
-*/
