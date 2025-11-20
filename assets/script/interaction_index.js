@@ -1,12 +1,25 @@
 const login = document.querySelector(".login-dialog");
 const button = document.querySelector(".fa-x");
-const user = document.querySelector(".fa-circle-user");
+const user = document.getElementById("modal-open");
+const modal = document.querySelector(".modal");
+const modalContent = document.querySelector(".modal-content");
+const close = document.getElementById("x");
 
+function openModal(){
+    console.log('hello');
+    modal.classList.remove('hidden');
+    modalContent.classList.remove('hidden');
+}
 
-user.addEventListener('click', function() {
-  login.classList.add('visible');
+function closeModal() {
+    modal.classList.add('hidden');
+    modalContent.classList.add('hidden');
+}
+
+user.addEventListener('click', () => {
+  openModal();
 });
 
-button.addEventListener('click', function() {
-  login.classList.remove('visible');
+close.addEventListener('click', () => {
+  closeModal();
 });
